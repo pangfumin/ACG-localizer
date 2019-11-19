@@ -1,3 +1,11 @@
+Run in docker:
+1) build docker
+docker build -t algo/acg_localizer -f Dockerfile .
+
+2) run docker  
+./sample_run_docker.sh 
+
+
 ACG Localizer Version 1.2.1
 www.rwth-graphics.de/localization/
 tsattler@cs.rwth-aachen.de
