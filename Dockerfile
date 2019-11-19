@@ -1,5 +1,7 @@
+# docker pull ubuntu:16.04  if needed
 FROM ubuntu:16.04
-MAINTAINER Jianwei Han <hanjianwei@gmail.com>
+# modified from Jianwei Han <hanjianwei@gmail.com>
+MAINTAINER  Fumin Pang <pangfumin@gmail.com>
 
 COPY flann-1.6.11-src.zip /
 
