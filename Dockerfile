@@ -4,13 +4,14 @@ FROM ubuntu:16.04
 MAINTAINER  Fumin Pang <pangfumin@gmail.com>
 
 COPY flann-1.6.11-src.zip /
+COPY ann_1.1.2.tar.gz  /
 
 RUN apt-get update
 RUN apt-get upgrade -y --allow-unauthenticated
 
 RUN apt-get -y --allow-unauthenticated  install g++ cmake libgmm++-dev liblapack-dev libf2c2-dev unzip
 
-ADD http://www.cs.umd.edu/~mount/ANN/Files/1.1.2/ann_1.1.2.tar.gz /
+# ADD http://www.cs.umd.edu/~mount/ANN/Files/1.1.2/ann_1.1.2.tar.gz /
 
 RUN tar -zxf ann_1.1.2.tar.gz
 
